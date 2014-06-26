@@ -8,7 +8,8 @@ action :create do
         "--vcpus #{new_resource.vcpus}",
         "--memory #{new_resource.memory}mb",
         "--size #{new_resource.size}mb",
-        "--password #{new_resource.password}"
+        "--password #{new_resource.password}",
+        "--genpass 0"
     ]
 
     # add networking if enabled
